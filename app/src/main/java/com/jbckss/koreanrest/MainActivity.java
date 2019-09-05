@@ -28,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        deleteDatabase("vietnam.db");
+
         // 데이터를 넣어주자
         try{
             boolean result = isCheckDB();
