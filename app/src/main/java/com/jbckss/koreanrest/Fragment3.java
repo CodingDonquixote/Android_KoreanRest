@@ -164,7 +164,7 @@ public class Fragment3 extends Fragment {
             else if(rest_category==3)
                 tableName = "chicken";
             else if(rest_category==4)
-                tableName = "westerFood";
+                tableName = "westernFood";
             else if(rest_category==5)
                 tableName = "japaneseFood";
             else if(rest_category==6)

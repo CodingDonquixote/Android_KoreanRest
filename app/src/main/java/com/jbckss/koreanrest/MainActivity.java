@@ -8,7 +8,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.appcompat.widget.Toolbar;
 import android.util.Log;
-import android.widget.Toast;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -28,8 +27,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        deleteDatabase("vietnam.db");
-
         // 데이터를 넣어주자
         try{
             boolean result = isCheckDB();
@@ -39,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
                 //if(isCheckDB3()){
                 //    deleteDatabase("vietnam2.db");
                 //}
-                Toast.makeText(this, "DB복사됨", Toast.LENGTH_LONG).show();
+                Log.d("카피", "DB복사됨");
             }
             if(!isCheckDB2()){
                 copyDB2();

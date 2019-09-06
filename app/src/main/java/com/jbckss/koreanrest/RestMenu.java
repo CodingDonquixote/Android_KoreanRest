@@ -11,7 +11,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -33,7 +32,6 @@ public class RestMenu extends Fragment {
         if(getArguments() != null){
             int rest_idx = getArguments().getInt("item_idx", 0);
             String menuName = getArguments().getString("tableName", "0");
-            Toast.makeText(view.getContext(), "넘어온 값 : "+ rest_idx, Toast.LENGTH_LONG).show();
             selectData(menuName, rest_idx);
         }
 

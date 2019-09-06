@@ -200,7 +200,7 @@ public class SelectRestaurant extends Fragment {
                 return 1;
             }
         }else{
-            Toast.makeText(getActivity(), "데이터 베이스 오픈이 안됨", Toast.LENGTH_LONG).show();
+            Log.d("DB","데이터 베이스 오픈이 안됨");
             return 0;
         }
         return 0;

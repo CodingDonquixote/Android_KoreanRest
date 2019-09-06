@@ -39,7 +39,6 @@ MenuListFrag menuListFrag;
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 FoodItem item = (FoodItem) adapter.getItem(position);
-                Toast.makeText(getActivity(),"선택 : " + item.getName(), Toast.LENGTH_LONG).show();
                 menuListFrag = new MenuListFrag();
 
                 Bundle args = new Bundle();
